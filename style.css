@@ -1,0 +1,231 @@
+:root {
+  --bg: #eef0fa;
+  --surface: #ffffff;
+  --ink: #1b1d2a;
+  --muted: #666a80;
+  --accent: #3552cc;
+  --accent-dark: #263ea8;
+  --accent-2: #ff7a45;
+  --accent-soft: #e4e8ff;
+  --chip-bg: #eef1ff;
+  --shadow: 0 14px 34px rgba(53, 82, 204, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1.5rem 4rem;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Header: full-bleed accent band */
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 0 0 24px 24px;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  max-width: none;
+  padding-left: calc(50% - 380px);
+  padding-right: calc(50% - 380px);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow);
+}
+
+.header-text h1 {
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.header-text .title {
+  margin: 0.25rem 0 0;
+  color: var(--accent-soft);
+  font-weight: 500;
+}
+
+.site-header nav {
+  width: 100%;
+}
+
+.site-header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus {
+  background: var(--accent-2);
+}
+
+main {
+  padding-top: 2rem;
+}
+
+/* Card sections */
+main section {
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+  border-top: 4px solid var(--accent-2);
+}
+
+h2 {
+  font-family: "Poppins", "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent-dark);
+  margin: 0 0 1rem;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 1.5rem 0 0.25rem;
+}
+
+article:first-of-type h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+/* Skills as chips */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skills-list li {
+  background: var(--chip-bg);
+  color: var(--accent-dark);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+pre {
+  background: #10142b;
+  color: #e7e9ff;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--accent-dark);
+}
+
+.rs-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  color: var(--accent-2) !important;
+  font-weight: 600;
+}
+
+.rs-logo {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .site-header nav ul {
+    justify-content: center;
+  }
+
+  .rs-link {
+    margin-left: 0;
+  }
+
+  main section {
+    padding: 1.5rem;
+  }
+}
