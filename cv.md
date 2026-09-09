@@ -1,9 +1,8 @@
 # Volha Kavaliova
 **Software Engineer**
 
-📧 [olkakovka812@gmail.com](mailto:olkakovka812@gmail.com) &nbsp;|&nbsp; 📱 +48 500 723 222 &nbsp;|&nbsp; 💼 [LinkedIn](https://linkedin.com/in/kavaliova-volha/) &nbsp;|&nbsp; 🐙 [GitHub](https://github.com/Volhakav) &nbsp;|&nbsp; 💬 Discord: volhakav
+ [olkakovka812@gmail.com](mailto:olkakovka812@gmail.com) &nbsp;|&nbsp;  +48 500 723 222 &nbsp;|&nbsp;  [LinkedIn](https://linkedin.com/in/kavaliova-volha/) &nbsp;|&nbsp;  [GitHub](https://github.com/Volhakav) &nbsp;|&nbsp;  Discord: volhakav
 
-<!-- Replace with a real photo/avatar, e.g.: ![avatar](avatar.png) -->
 
 ## About Me
 
@@ -44,21 +43,6 @@ Full-stack developer with a stronger background on the backend (NestJS, Prisma, 
 - Engineered a data module to calculate popular book categories, providing analytical insights into library usage.
 - Collaborated on the frontend integration, building a responsive, adaptive UI with React, JavaScript, HTML, and CSS.
 
-## Code Sample
-
-Solution to the [Multiply](https://www.codewars.com/kata/50654ddff44f800200000004) kata on Codewars:
-
-```javascript
-/**
- * Multiplies two integers.
- * @param {number} a
- * @param {number} b
- * @returns {number} the product of a and b
- */
-function multiply(a, b) {
-  return a * b;
-}
-```
 
 ## Technical Skills
 
@@ -83,4 +67,3 @@ Faculty of Computer Science and Engineering
 
 ---
 
-*Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji, zgodnie z Ustawą z dn. 29.08.1997 r. o ochronie danych osobowych (Dziennik Ustaw nr 133 poz. 883).*
