@@ -69,19 +69,19 @@
         function findOutlier(integers){
             let numOfOdd = 0;
             let numOfEven = 0;
-            for(let i = 0; i < integers.length; i++){
+            for(let i = 0; i &lt; integers.length; i++){
                 if(integers[i] % 2 == 0){
-                numOfEven++;
+                    numOfEven++;
                 } else {
-                numOfOdd++;
+                    numOfOdd++;
                 }
             }
-            if(numOfOdd < numOfEven){
-                return integers.find(x => x % 2 !== 0);
+            if(numOfOdd &lt; numOfEven){
+                return integers.find(x =&gt; x % 2 !== 0);
             } else {
-                return integers.find(x => x % 2 == 0);
+                return integers.find(x =&gt; x % 2 == 0);
             }
-            }
+        }
       </code></pre>
     </section>
 
