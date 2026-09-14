@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volha Kavaliova - CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="./img/image.png" alt="Photo of Volha Kavaliova" class="avatar">
+    <div class="header-text">
+      <h1>Volha Kavaliova</h1>
+      <p class="title">Software Engineer</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code Example</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Software Engineering student at Cracow University of Technology, having worked as a
+        Software Engineer Intern at Vention on Medfast, a healthcare platform for managing patients,
+        doctors, appointments, and medical tests. Comfortable across the full stack, with a particular
+        interest in backend architecture (NestJS, Prisma, PostgreSQL) and building reliable, well-tested
+        features. Looking to keep growing as an engineer on projects where I can take ownership of a
+        feature end to end, from data model to UI.
+      </p>
+    </section>
+
+    <section id="contacts">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Email: <a href="mailto:olkakovka812@gmail.com">olkakovka812@gmail.com</a></li>
+        <li>Phone: +48 500 723 222</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/kavaliova-volha/">linkedin.com/in/kavaliova-volha/</a></li>
+        <li>GitHub: <a href="https://github.com/Volhakav">github.com/Volhakav</a></li>
+        <li>Discord: volhakav</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>TypeScript, JavaScript (ES6+), Java, Python</li>
+        <li>React, Next.js, Vite, Tailwind CSS, SASS, HTML5, CSS3</li>
+        <li>Node.js, NestJS, Prisma, Spring Boot, Spring Security, Hibernate, REST APIs</li>
+        <li>PostgreSQL, MySQL, Oracle</li>
+        <li>Git, GitHub, Docker, AWS</li>
+      </ul>
+    </section>
+
+    <section id="code">
+      <h2>Code Example</h2>
+      <p>
+        Solution to <a href="https://www.codewars.com/kata/5526fc09a1bbd946250002dc" target="_blank" rel="noopener noreferrer">this Codewars kata</a>:
+      </p>
+      <pre><code>
+        function findOutlier(integers){
+            let numOfOdd = 0;
+            let numOfEven = 0;
+            for(let i = 0; i &lt; integers.length; i++){
+                if(integers[i] % 2 == 0){
+                    numOfEven++;
+                } else {
+                    numOfOdd++;
+                }
+            }
+            if(numOfOdd &lt; numOfEven){
+                return integers.find(x =&gt; x % 2 !== 0);
+            } else {
+                return integers.find(x =&gt; x % 2 == 0);
+            }
+        }
+      </code></pre>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <article>
+        <h3>Vention &mdash; Software Engineer Intern</h3>
+        <p class="meta">May 2026 &ndash; August 2026 &middot; Part-time, Hybrid</p>
+        <ul>
+          <li>Contributed to Medfast, a medical platform for managing patients, doctors, appointments, referrals, and medical tests across web and admin applications.</li>
+          <li>Developed and maintained an interactive appointment calendar and booking flow, implementing scheduling logic for visits, referrals, and test appointments across both frontend and backend.</li>
+          <li>Implemented rescheduling and cancellation flows for patient appointments, including slot release, time-conflict detection, doctor availability, and handling cancelled or unavailable slots.</li>
+          <li>Unified validation logic for phone numbers, ZIP codes, and age requirements across patient and doctor registration and profile flows.</li>
+          <li>Participated in final-stage bug fixing and application polish, including data seeding, UI improvements, timezone handling, CI lint fixes, and cross-application consistency.</li>
+          <li>Used AI-assisted code reviews for feature branches, addressing identified issues before merging and maintaining review reports in the repository.</li>
+        </ul>
+      </article>
+
+      <h2>Projects</h2>
+      <article>
+        <h3>Rosary &mdash; Daily Tasks App for Children</h3>
+        <p class="meta">JavaScript, React + Vite, Fetch API, CSS3, HTML5 &middot; <a href="https://github.com/Volhakav/frontend-rosary">source code</a></p>
+        <ul>
+          <li>Built a dynamic task management system with React and Vite for daily content consumption.</li>
+          <li>Designed a service layer bridging the frontend with a backend admin panel for content updates.</li>
+          <li>Developed a custom scheduling algorithm to reset daily tasks in sync with the user's local date.</li>
+          <li>Used the Fetch API to retrieve JSON data and keep app state in sync with the server.</li>
+          <li>Designed a mobile-first, responsive, accessible UI for a younger audience.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Library Management &amp; Analytics Platform</h3>
+        <p class="meta">Java, Spring Boot, PostgreSQL, React, JUnit &middot; <a href="https://github.com/Volhakav/book-rental">source code</a></p>
+        <ul>
+          <li>Built a RESTful API with Java and Spring Boot to manage lending workflows and user profiles.</li>
+          <li>Used a serverless PostgreSQL database (Neon) with Hibernate for data persistence.</li>
+          <li>Wrote unit and integration tests with JUnit for borrowing logic and return timelines.</li>
+          <li>Built a data module calculating popular book categories for usage analytics.</li>
+          <li>Collaborated on a responsive React frontend for the platform.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        Cracow University of Technology, Faculty of Computer Science and Engineering &mdash;
+        Cracow, Poland (October 2023 &ndash; expected February 2027).
+      </p>
+
+      <h2>English Language</h2>
+      <p>
+        Professional Working Proficiency, used daily for communication, documentation, and code
+        reviews in an international team environment.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://github.com/Volhakav">GitHub Profile</a>
+    <span>&copy; 2026 Volha Kavaliova</span>
+    <a href="https://rs.school/" class="rs-link">
+      <img src="https://rs.school/_next/static/media/rss-logo.c19ce1b4.svg" alt="RS School logo" class="rs-logo">
+      RS School
+    </a>
+  </footer>
+</body>
+</html>
